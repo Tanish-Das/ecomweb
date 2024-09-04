@@ -1,0 +1,90 @@
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+    background-color: #0d6efd;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    padding: 10px;
+}
+.carousel-control-prev-icon {
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%23fff' viewBox='0 0 8 8'%3E%3Cpath d='M4.854.146a.5.5 0 0 0-.708.708L6.293 3.5H1.5a.5.5 0 0 0 0 1h4.793L4.146 6.854a.5.5 0 1 0 .708.708l3-3a.5.5 0 0 0 0-.708l-3-3z'/%3E%3C/svg%3E");
+}
+.carousel-control-next-icon {
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%23fff' viewBox='0 0 8 8'%3E%3Cpath d='M3.146 6.854a.5.5 0 0 1 0-.708L5.293 4.5H.5a.5.5 0 0 1 0-1h4.793L3.146 1.854a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3z'/%3E%3C/svg%3E");
+}
+.carousel-item {
+    padding: 30px;
+    background-color: #f8f9fa;
+    border-radius: 15px;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+    transition: transform 0.4s ease-in-out, opacity 0.4s ease-in-out;
+}
+.carousel-item img {
+    border-radius: 10px;
+    max-height: 300px;
+    object-fit: contain;
+    margin-bottom: 20px;
+}
+.carousel-item h3 {
+    font-size: 2rem;
+    font-weight: bold;
+    color: #343a40;
+}
+.carousel-item p.lead {
+    font-size: 1.5rem;
+    color: #007bff;
+    margin-bottom: 20px;
+}
+.carousel-item p {
+    font-size: 1rem;
+    color: #555;
+    line-height: 1.6;
+}
+.btn-primary {
+    background-color: #0d6efd;
+    border: none;
+    padding: 12px 24px;
+    font-size: 1.1rem;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    border-radius: 25px;
+}
+.btn-primary:hover {
+    background-color: #0056b3;
+    transform: translateY(-3px);
+}
+.carousel-inner {
+    position: relative;
+    overflow: hidden;
+}
+.carousel-item-next,
+.carousel-item-prev,
+.carousel-item.active {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #343a40;
+}
+h2 {
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: #007bff;
+    margin-bottom: 1.5rem;
+}
+@media (max-width: 768px) {
+    .carousel-item {
+        padding: 20px;
+    }
+    .carousel-item h3 {
+        font-size: 1.8rem;
+    }
+    .carousel-item p.lead {
+        font-size: 1.3rem;
+    }
+    .btn-primary {
+        padding: 10px 20px;
+        font-size: 1rem;
+    }
+}
